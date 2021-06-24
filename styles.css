@@ -1,0 +1,33 @@
+body {
+  background-color: cadetblue;
+}
+.header {
+  text-align: center;
+}
+.container {
+  width: max-content;
+  margin: 5em auto;
+}
+.key {
+  display: inline-block;
+  border-style: solid;
+  text-align: center;
+  height: 16em;
+  width: 4em;
+  border-left: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  border-radius: 0 0 5px 5px;
+  box-shadow: -1px 0 0 rgba(255, 255, 255, 0.8) inset, 0 0 5px #ccc inset,
+    0 0 3px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  /*background:linear-gradient(to bottom,#eee 0%,#fff 100%);*/
+  margin: -3px;
+}
+
+.key:first-child {
+  border-radius: 5px 0 5px 5px;
+}
+
+.key:last-child {
+  border-radius: 0 5px 5px 5px;
+}
