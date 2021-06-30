@@ -1,4 +1,4 @@
-let myKeys = ['KeyA', 'KeyS', 'KeyD', 'KeyF', 'KeyG', 'KeyH', 'KeyJ'];
+let myKeys = ['KeyA', 'KeyS', 'KeyD', 'KeyF', 'KeyG', 'KeyH', 'KeyJ','KeyW','KeyE', 'KeyT', 'KeyY', 'KeyU'];
 document.addEventListener("keypress", function (e) {
     if (myKeys.includes(e.code)) {
         const sound = new Audio(`./audio/${e.key}.mp3`);
