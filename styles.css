@@ -29,9 +29,14 @@ h1{
   width: max-content;
   margin: 5em auto;
   position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
+
 /*-------------white keys------------------*/
+
 .white-keys kbd{
   display: inline-block;
   border-style: solid;
@@ -65,27 +70,30 @@ h1{
 }
 
 /*------------black keys--------------*/
-.black-keys {
-  margin-top: -200px;
-  position: absolute;
-}
 
-.black-keys kbd{
+
+.black-keys {
+  width: 400px;
+  position: absolute;
+  display: flex;
+}
+.black-keys kbd {
+  width: 30px;
+  height: 100px;
+  background-color: black;
   display: inline-block;
   text-align: center;
-  color:  #FFFFFF;
-  height:8em;
-  width:2em;
-  margin:0 0 0 -1em;
-  z-index:2;
-  border:1px solid #000;
-  border-radius:0 0 3px 3px;
-  box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -5px 2px 3px rgba(0,0,0,0.6) inset,0 2px 4px rgba(0,0,0,0.5);
-  /*background:linear-gradient(45deg,#222 0%,#555 100%)*/
-  background-color: black;
+  color: antiquewhite;
+  z-index: 10;
+  box-sizing: border-box;
+  padding-top: 60px;
 }
-
-.black-keys .key:active {
-  box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -2px 2px 3px rgba(0,0,0,0.6) inset,0 1px 2px rgba(0,0,0,0.5);
-  background:linear-gradient(to right,#444 0%,#222 100%)
+.black-keys kbd:first-child {
+  margin-left: 50px;
+}
+.black-keys kbd:nth-child(3) {
+  margin-left: 80px;
+}
+.black-keys kbd:nth-child(2), .black-keys kbd:nth-child(4), .black-keys kbd:nth-child(5) {
+  margin-left: 23px;
 }
